@@ -1,5 +1,5 @@
 const fs = require('fs');
-
+const uuid = require('../helpers/uuid')
 const router = require('express').Router();
 
 // Retrieves notes information to display on screen
@@ -26,6 +26,7 @@ router.post('/notes', (req,res) => {
             const newNote = {
                 title,
                 text,
+                id: uuid(),
             };
             notes.push(newNote);
 
