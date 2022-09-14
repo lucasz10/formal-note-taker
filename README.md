@@ -21,7 +21,7 @@ This is a multi page application with a landing page that takes the user to a se
 
 ## Usage
 
-The user can navigate to a deployed website and take notes that will be stored serverside.
+The user can navigate to a deployed website and take notes that will be stored serverside. You can find a live deployment of the application [here](https://formal-note-taker.herokuapp.com/notes)
 
 ## Contribution Guidelines
 
