@@ -2,7 +2,7 @@ const fs = require('fs');
 const uuid = require('../helpers/uuid')
 const router = require('express').Router();
 
-// Retrieves notes information to display on screen
+// get request that Retrieves notes information from database to display on screen
 router.get('/notes', (req,res) => {
     console.log("Getting previous notes...");
     fs.readFile('./db/db.json', 'utf8', (err,data) => {
@@ -14,7 +14,7 @@ router.get('/notes', (req,res) => {
     })
 })
 
-// Adds new note
+// post request that adds new note to database
 router.post('/notes', (req,res) => {
     console.log("Notes being updated...");
     fs.readFile('./db/db.json', 'utf8', (err,data) => {
